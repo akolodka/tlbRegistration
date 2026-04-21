@@ -1,11 +1,11 @@
-# VBA Subroutines for Registering C# DLLs Without Admin Rights
+# How to Register C# DLLs Without Administrator Privileges Using Excel VBA
 
-When you create custom class libraries in C# and want to use them in VBA, you must register them using `regasm.exe`. 
-Unlike native C++ DLLs, you cannot simply add a direct file reference in the VBA editor.
+Unlike native C++ DLLs, you cannot simply add a direct file reference in the VBA editor. 
+When you create custom class libraries in C# and want to use them in Excel, you must register them using `regasm.exe`. 
 
-The main caveat is that running `regasm.exe` from the command line typically requires administrator privileges. These subroutines provide a workaround to register and unregister DLLs using only standard user permissions.
+The main caveat is that running `regasm.exe` from the command line typically requires administrator privileges.
 
-
+This repository provides a workaround to register and unregister C# DLLs without requiring elevated access.
 
 ## Registration
 1. Copy the contents of `Register.txt` into any module in your VBA project.
